@@ -15,7 +15,6 @@ public class Employee
     public DateTime DateOfBirth { get; }
     public string Gender { get;}
 
-    // Метод для расчета возраста
     public int CalculateAge()
     {
         return DateTime.Now.Year - DateOfBirth.Year - (DateTime.Now.Month < DateOfBirth.Month ||
@@ -25,7 +24,6 @@ public class Employee
             : 0);
     }
 
-    // Метод для сохранения сотрудника в базу данных
     public void SaveToDatabase(NpgsqlConnection connection)
     {
         using (var command =
@@ -40,7 +38,6 @@ public class Employee
         }
     }
 
-    // Метод для пакетной отправки данных в БД
     public static void SaveToDatabase(NpgsqlConnection connection, List<Employee> employees)
     {
         using (var transaction = connection.BeginTransaction())
