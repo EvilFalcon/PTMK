@@ -68,7 +68,6 @@ public class EmployeeRepository : IEmployeeRepository
         List<Employee> employees = new List<Employee>();
         Random random = new Random();
 
-        // Создание count записей с равномерным распределением пола и начальной буквы ФИО
         for (int i = 0; i < count; i++)
         {
             string firstName = GenerateRandomName();
@@ -79,7 +78,6 @@ public class EmployeeRepository : IEmployeeRepository
             employees.Add(new Employee(fullName, dateOfBirth, gender));
         }
 
-        // Создание maleCountWithFLastName записей с мужским полом и фамилией на "F"
         for (int i = 0; i < maleCountWithFLastName; i++)
         {
             string firstName = GenerateRandomName();
@@ -127,7 +125,6 @@ public class EmployeeRepository : IEmployeeRepository
         return employees;
     }
 
-    // Генерация случайного имени
     private static string GenerateRandomName()
     {
         Random random = new Random();
@@ -139,7 +136,6 @@ public class EmployeeRepository : IEmployeeRepository
         return names[random.Next(names.Length)];
     }
 
-    // Генерация случайной даты рождения
     private static DateTime GenerateRandomDateOfBirth()
     {
         Random random = new Random();
