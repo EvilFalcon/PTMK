@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "b9R03NJRaeurgG5IXM3Zpjeydfu7ldvb3B9pUZRK7QEHEEawhmh8OePYdHS2y+Cs8ns6TSoWa2ErKn9MSoE5dQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aress\\Documents\\GitHub\\PTMK\\PTMK\\PTMK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aress\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\aress\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\aress\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
